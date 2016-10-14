@@ -1,7 +1,7 @@
 +++
+date = "2016-10-14T04:58:00+00:00"
 draft = false
-date = "2016-10-14T04:58:00Z"
 title = "firstpost"
 
 +++
-This is my first test post.
+This is my first test post.
