@@ -1,95 +1,113 @@
-baseurl = "http://www.yourdomain.com/"
+baseurl = "http://replace-this-with-your-website-url.com/"
+title = "Academic Theme"
+copyright = "&copy; 2016 Your Name"
 languageCode = "en-us"
-title = "Icarus"
+theme = "academic"
+
 # Enable comments by entering your Disqus shortname
 disqusShortname = "spf13"
-# Enable Google Analytics by entering your tracking code
+
+# Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
-# Define the number of posts per page
-paginate = 10
-footnotereturnlinkcontents = "↩"
-theme = "hugo-icarus-theme"
-
-
-[permalinks]
-    post = "/:year/:month/:day/:slug"
 
 
 [params]
-    # Tell me who you are
-    author = "John Doe"
-    bio = "Blogger - Programmer - Gopher"
-    location = "Earth"
-    site_description = ""
-    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
-    avatar = "css/images/avatar.png"
-    logo = "css/images/logo.png"
+  name = "Lena Smith"
+  role = "Professor of Artificial Intelligence"
+  organization = "Stanford University"
+  avatar = "portrait.jpg"
+  email = "test@example.org"
+  address = "Stanford AI Lab, Stanford University, California, 90210, USA."
+  phone = "888 888 88 88"
 
-    # Format dates with Go's time formatting
-    date_format = "2006-01-02"
+  # Enable Keybase in Contact section by entering your keybase.io username.
+  keybase = ""
 
-# Create custom menu entries by defining a label and a link for
-# them. Since you can also link posts, you've the option the
-# place the links before or after them.
-#
-# E.g.: "Home" appears before all linked posts in the menu
-# and "Tags" / "Categories" after them.
-[[params.menu]]
-    before = true
-    label  = "Home"
-    link   = "/"
+  # Date format (refer to Go's date format: http://flippinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "Mon, Jan 2, 2006"
 
-[[params.menu]]
-    before = false
-    label  = "Tags"
-    link   = "tags/"
+  # Enable global LaTeX math rendering?
+  #   If false, you can enable it locally on a per page basis.
+  math = false
 
-[[params.menu]]
-    before = false
-    label  = "Categories"
-    link   = "categories/"
+  # Enable native social sharing buttons?
+  sharing = true
 
-# Enter a link for the follow button on the left
-[params.profile]
-    follow_button = "https://github.com/digitalcraftsman"
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
 
 
-[social]
-# Add your social network accounts to the profile section on the left
-# by entering your username. The links to your account will be
-# created automatically.
-    github          = "digitalcraftsman"
-    gitlab          = ""
-    bitbucket       = ""
-    jsfiddle        = ""
-    codepen         = ""
-    foursquare      = ""
-    dribbble        = ""
-    deviantart      = ""
-    behance         = ""
-    flickr          = ""
-    instagram       = ""
-    youtube         = ""
-    vimeo           = ""
-    vine            = ""
-    medium          = ""
-    wordpress       = ""
-    tumblr          = ""
-    xing            = ""
-    linkedin        = ""
-    slideshare      = ""
-    stackoverflow   = ""
-    reddit          = ""
-    pinterest       = ""
-    googleplus      = ""
-    facebook        = ""
-    facebook_admin  = ""
-    twitter_domain  = ""
-    twitter         = "spf13"
+  # Social/Academic Networking
+  #
+  # Icon pack "fa" includes the following social network icons:
+  #
+  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
+  #   youtube, instagram, soundcloud
+  #
+  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   "mailto:your@email.com" as the link.
+  #
+  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #
+  # Icon pack "ai" includes the following academic network icons:
+  #
+  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #
+  #   Full list: https://jpswalsh.github.io/academicons/
 
-# Enable and disable widgets for the right sidebar
-[params.widgets]
-    recent_articles = true
-    categories = true
-    tags = true
-    tag_cloud = true
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:test@example.org"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/GeorgeCushen"
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/gcushen"
+
+
+# Navigation Links
+#   The weight parameter defines the order that the links will appear in.
+
+[[menu.main]]
+  name = "Home"
+  url = "#top"
+  weight = 1
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 2
+
+[[menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 3
+
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 4
+
+[[menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 5
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 6
